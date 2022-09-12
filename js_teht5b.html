@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="koodaukset.css" rel="stylesheet">
+ </head>
+ <body>
+   <!-- Kaksiulotteinen taulukko jonka ensimmäiselle riville sijoitetaan Luku 1, Luku 2, Luku 3, Luku 4 ja Ka 
+        ja toiselle riville sijoitetaan luvut 3, 5, 7 ja 9 ja lasketaan niiden keskiarvo.-->
+   
+   <p id="keskiarvo2" class="boksi"></p>
+   
+   <script>
+   
+     var numerot = [["Luku 1", "Luku 2", "Luku 3", "Luku 4", "Ka"],
+                    [3, 5, 7, 9, 0]];
+   
+     numerot[1][4] = (numerot[1][0] + numerot[1][1] + numerot[1][2] + numerot[1][3]) / 4;
+   
+     document.getElementById("keskiarvo2").innerHTML =
+       numerot[0][0] + " = " + numerot[1][0] + "<br>" +
+	   numerot[0][1] + " = " + numerot[1][1] + "<br>" +
+       numerot[0][2] + " = " + numerot[1][2] + "<br>" +
+       numerot[0][3] + " = " + numerot[1][3] + "<br>" +
+       numerot[0][4] + " = " + numerot[1][4] + "<br>";
+
+   </script>
+ </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="koodaukset.css" rel="stylesheet">
+  <script>
+    function rinnanTaulu() {
+      Rkok = 1 / ((1 / ohmit[0]) + (1 / ohmit[1]) + (1 / ohmit[2]));
+	  return Rkok.toFixed(2);
+    }
+  </script>  
+ </head>
+ <body>
+   <!-- Kolmen vastuksen rinnankytkentä JS-funktiolla jossa arvot on sijoitettu yksiulotteiseen taulukkoon. -->
+   
+   <p id="rinnantaulu" class="loota1"></p>
+   
+   <script>
+     var ohmit = [10, 20, 30];
+     var Rkok;
+	 
+     document.getElementById("rinnantaulu").innerHTML =
+       "R1 = " + ohmit[0] + " Ω" + "<br>" +
+       "R2 = " + ohmit[1] + " Ω" + "<br>" +
+	   "R3 = " + ohmit[2] + " Ω" + "<br>" +
+	   "Rkok = " + rinnanTaulu(ohmit) + " Ω";
+   </script>
+ </body>
+</html>

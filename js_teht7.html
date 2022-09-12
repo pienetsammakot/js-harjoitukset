@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="koodaukset.css" rel="stylesheet">
+  <script>
+    function kolmeSarjaan() {
+      Rsarja=R1+R2+R3;
+      return Rsarja;
+    }	
+    function kolmeRinnan() {
+	  Rrinnan = 1 / ((1 / R1) + (1 / R2) + (1 / R3));
+	  return Rrinnan.toFixed(2);
+    }
+  </script>  
+ </head>
+ <body>
+   <!-- Kolmen vastuksen rinnankytkentä JavaScript-funktiolla.-->
+   
+   <div class="loota1">
+     <p id="arvot"></p>
+     <p id="koe2"></p>
+     <p id="koe1"></p>
+   </div>
+   
+   <script>
+
+      var R1=100, R2=70, R3=25, Rsarja, Rrinnan;
+	  
+      document.getElementById("koe2").innerHTML = "Rsarja = " + kolmeSarjaan(R1,R2,R3) + " Ω";
+
+      document.getElementById("koe1").innerHTML = "Rrinnan = " + kolmeRinnan(R1,R2,R3) + " Ω";
+	
+      document.getElementById("arvot").innerHTML =
+	     "R1 = " + R1 + " Ω" + "<br>" +
+	     "R2 = " + R2 + " Ω" + "<br>" +
+	     "R3 = " + R3 + " Ω" + "<br>";
+	 
+   </script>  
+ </body>
+</html>

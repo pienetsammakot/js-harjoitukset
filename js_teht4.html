@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="koodaukset.css" rel="stylesheet">
+ </head>
+ <body>
+   <!-- Sijoita kahteen muuttujaan kaksi erilaista tekstiä.
+        Täytä tekstit eri muuttujien avulla www-sivuille eri kappaleina 
+        ja kokeile saatko näytettyä teksteille otsikot.-->
+   
+   
+   
+   <div class="boksi">
+   <h2 id="title1"></h2>
+   <p id="teksti1" title="Aristoteles"></p>
+   <h2 id="title2"></h2>
+   <p id="teksti2" title="Franz Kafka"></p>
+   </div>
+   
+   <script>
+   
+     var aristoteles = '"On vain yksi tapa välttää kritiikkiä: älä tee mitään, älä sano mitään äläkä ole mitään."';
+     var kafka = '"Minulla on todellinen tunne itsestäni vain silloin, kun olen sietämättömän onneton."';
+   
+     document.getElementById("teksti1").innerHTML =
+       aristoteles + "<br><br>";
+	 
+     document.getElementById("teksti2").innerHTML =
+       kafka;
+	 
+     var title1 = document.getElementById("teksti1").title;
+     document.getElementById("title1").innerHTML = title1;
+   
+     var title2 = document.getElementById("teksti2").title;
+     document.getElementById("title2").innerHTML = title2;
+   </script>
+ </body>
+</html>

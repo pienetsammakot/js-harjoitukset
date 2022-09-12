@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+     function kuvaTekstinVaihto1() {
+	   document.getElementById("JSkuvateksti1").innerHTML = "Goodbye cruel world!";
+	 }
+	 function kuvaTekstinVaihto2() {
+	   document.getElementById("JSkuvateksti2").innerHTML = "sammakot eivät kuole pilanpäiten, vaan oikeasti.";
+	 }
+  </script>
+  <link href="koodaukset.css" rel="stylesheet">
+ </head>
+ <body>
+   <!-- Kaksi kuvaa jotka vaihtavat tekstin. -->
+   
+   <p id="JSkuvateksti1">Hello world!</p>
+   <br>
+   
+   <img id="JSkuva1" alt="my-melody" onclick="kuvaTekstinVaihto1()">
+   <script>
+	 document.getElementById("JSkuva1").src="mmld.png"
+   </script>
+   </img>
+   <br>
+   <img id="JSkuva2" alt="my-sweet-piano" onclick="kuvaTekstinVaihto2()">
+   <script>
+     document.getElementById("JSkuva2").src="msp.png"
+   </script>
+   </img>
+   
+   <p id="JSkuvateksti2">Vaikka pojat heittävät sammakoita pilanpäiten kivillä</p>
+ </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="koodaukset.css" rel="stylesheet">
+ </head>
+ <body>
+   <!-- Yksiulotteinen taulukko, joka laskee neljän siihen sijoitetun luvun
+        keskiarvon viidennelle riville.-->
+   
+   <p id="keskiarvo" class="boksi"></p>
+   
+   <script>
+   
+     var luvut = [3, 34, 83, 89, 0];
+   
+     luvut[4] = (luvut[0] + luvut[1] + luvut[2] + luvut[3]) / 4;
+   
+     document.getElementById("keskiarvo").innerHTML =
+       "Luku 1 = " + luvut[0] + "<br>" +
+	   "Luku 2 = " + luvut[1] + "<br>" +
+	   "Luku 3 = " + luvut[2] + "<br>" +
+	   "Luku 4 = " + luvut[3] + "<br>" +
+	   "Keskiarvo = " + luvut[4];
+   
+   </script>
+ </body>
+</html>

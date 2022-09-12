@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="koodaukset.css" rel="stylesheet">
+  <script>
+    function mouseDown() {
+      if(event.button==0) {
+	    document.getElementById("kytkennat").innerHTML =
+	      "Sarjakytkennän tulokset: " + (10+10+10) + " Ω";
+	  }
+	  if(event.altKey) {
+	    document.getElementById("kytkennat").innerHTML =
+	      "Rinnankytkennän tulokset: " + (1 / (1/10 + 1/10 + 1/10)).toFixed(2) + " Ω";
+	  }
+    }
+  </script>  
+ </head>
+ <body>
+   <!-- JS-funktio joka antaa vastusten sarja- tai rinnankytkennän tulokset
+        riippuen painetusta painikkeesta. --> 
+   
+   <div class="loota2">
+     <p id="arvot">
+       R1 = 10 <br>
+       R2 = 10 <br>
+       R3 = 10 <br>
+     </p>
+     <p id="kytkennat" onmousedown="mouseDown()">
+       Sarjakytkennän tulokset: paina hiiren vasenta painiketta
+       <br><br>
+       Rinnankytkennän tulokset: paina hiiren vasen + alt
+     </p>
+   </div>
+ </body>
+</html>

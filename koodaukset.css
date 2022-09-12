@@ -1,0 +1,118 @@
+   * {
+       box-sizing: border-box;
+   }
+   img {
+       width: 100%;
+       height: auto;
+   }
+   .namiska {
+	   background-color: #ef91b9;
+	   color: white;
+	   border: 2px solid #d81447;
+	   border-radius: 4px;
+	   padding: 10px;
+	   box-shadow: 5px 5px 3px #e1588b;
+	   margin: 5px;
+	   }
+	   
+	.namiska:hover {
+	   background-color: #f0cada;
+	   border: none;
+	   }
+	   
+	#JSkuva1 {
+	   width: auto;
+	   height: auto;
+	   box-shadow: 0 9px 5px #ff94db;
+	   margin: 5px;
+	  }
+	  
+	#JSkuva1:active {
+	   box-shadow: 0 5px 3px #ff94db;
+       transform: translateY(4px);
+	  }
+	  
+	#JSkuva2 {
+	   width: auto;
+	   height: auto;
+	   box-shadow: 0 9px 5px #ff94db;
+	   margin: 5px;
+	  }
+	  
+	#JSkuva2:active {
+	   box-shadow: 0 5px 3px #ff94db;
+       transform: translateY(4px);
+	  }
+	  
+	.boksi {
+	   width: 250px;
+	   height: auto;
+	   background-color: #fad2d2;
+	   color: #ed7f9c;
+	   padding: 15px;
+	   margin: 20px;
+	   border: solid 2px #ed7f9c;
+	   box-shadow: 0 4px 8px 0 #cedbec, 0 6px 20px 0 #cedbec;
+	   }
+	   
+	table.minimalistBlack {
+       font-family: Arial, Helvetica, sans-serif;
+       border: 3px solid #A9152C;
+       background-color: #FFD8F7;
+       width: 100%;
+       text-align: left;
+       border-collapse: collapse;
+      }
+    table.minimalistBlack td, table.minimalistBlack th {
+       padding: 6px 4px;
+       font-size: 13px;
+      }
+    table.minimalistBlack th {
+       background: #E69CC7;
+       background: -moz-linear-gradient(top, #ecb5d5 0%, #e8a6cc 66%, #E69CC7 100%);
+       background: -webkit-linear-gradient(top, #ecb5d5 0%, #e8a6cc 66%, #E69CC7 100%);
+       background: linear-gradient(to bottom, #ecb5d5 0%, #e8a6cc 66%, #E69CC7 100%);
+       font-size: 15px;
+       font-weight: bold;
+       color: #000000;
+       text-align: left;
+      }
+	.loota1 {
+       width: 200px;
+       height: auto;
+       background-color: #cfdce5;
+       border: none;
+       box-shadow: 10px 10px 5px #918cb5;
+       padding: 15px;
+       margin: 20px;
+      }
+	
+  	.loota2 {
+	   width: 200px;
+	   height: auto;
+	   background-color: #fefab1;
+	   color: #4b3124;
+	   border: 2px #4b3124 solid;
+	   padding: 10px;
+	   margin: 10px;
+	  }
+	
+	.loota3 {
+	   width: 200px;
+	   height: auto;
+	   background-color: #defff1;
+	   color: #ee86b4;
+	   border: 2px #ee86b4 dotted;
+	   padding: 10px;
+	   margin: 20px;
+	   text-align: center;
+	  }
+	  
+	#painike {
+       box-shadow: 0 9px 5px #ff94db;
+      }
+	  
+    #painike:active {
+       box-shadow: 0 5px 3px #ff94db;
+       transform: translateY(4px);
+      }

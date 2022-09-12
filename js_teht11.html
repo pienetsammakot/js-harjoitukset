@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="koodaukset.css" rel="stylesheet">
+  <script>
+    function tekstinVaihto(event) {
+      if(event.button==0)
+	  {
+	    document.getElementById("vaihto").innerHTML =
+	      "Painoit hiiren vasenta painiketta.";
+	    document.getElementById("vaihto").style.backgroundColor = "#fbc9e2";
+      }
+	  if(event.button==1)
+	  {
+	    document.getElementById("vaihto").innerHTML =
+	      "Painoit hiiren keskimmäistä painiketta.";
+	    document.getElementById("vaihto").style.backgroundColor = "#c8eaeb";
+	  }
+	  if(event.button==2)
+	  {
+	    document.getElementById("vaihto").innerHTML =
+	      "Painoit hiiren oikeaa painiketta.";
+	    document.getElementById("vaihto").style.backgroundColor = "#fefefe";
+	  }
+    }
+  </script>  
+ </head>
+ <body>
+   <!-- Teksti vaihtuu riippuen mitä hiiren painiketta painaa. -->
+   
+   <script>
+     document.addEventListener('contextmenu', event => event.preventDefault());
+   </script>
+  
+   <p id="vaihto" class="loota2" onmousedown="tekstinVaihto(event)">Teksti.</p>
+ </body>
+</html>

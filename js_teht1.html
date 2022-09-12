@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    function tekstinVaihto2() {
+	  document.getElementById("teksti2").innerHTML = "Alapuolen teksti vaihdettu.";
+	}
+	function tekstinVaihto() {
+      document.getElementById("teksti1").innerHTML = "Lisää tekstiä yläpuolella.";
+    }
+  </script>
+  <link href="koodaukset.css" rel="stylesheet">
+ </head>
+ <body>
+   <!-- Kaksi painiketta jotka vaihtavat tekstin. -->
+   
+   <p id="teksti1">Tekstiä yläpuolella</p>
+   
+   <button type="button" onclick="tekstinVaihto()" class="namiska">Vaihda 1</button>
+   
+   <button type="button" onclick="tekstinVaihto2()" class="namiska">Vaihda 2</button>
+   
+   <p id="teksti2">Tekstiä alapuolella</p>
+ </body>
+</html>

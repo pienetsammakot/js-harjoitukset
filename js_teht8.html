@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="koodaukset.css" rel="stylesheet">
+  <script>
+    function pallonTila(sade, pii) {
+      var tila = (4 * pii * sade * sade * sade) / 3;
+      return tila.toFixed(2);
+    }
+    function pallonAla(sade, pii) {
+      var ala = 4 * pii * sade * sade;
+	  return ala.toFixed(2);
+    }
+  </script>  
+ </head>
+ <body>
+   <!-- Laske pallon pinta-ala JS-funktioilla -->
+   
+   <div class="loota1">
+     <p id="arvot2"></p>
+     <p id="tilavuus"></p>
+     <p id="pintaala"></p>
+   </div>
+   
+   <script>
+     var sade = 35;
+     var pii = 3.14159;	 
+	 
+     document.getElementById("tilavuus").innerHTML =
+       "Pallon tilavuus = " + pallonTila(sade, pii);
+	
+     document.getElementById("pintaala").innerHTML =
+       "Pallon pinta-ala = " + pallonAla(sade, pii);
+    
+     document.getElementById("arvot2").innerHTML =
+       "Pallon säde = " + sade;
+   </script>
+ </body>
+</html>

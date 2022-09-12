@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="koodaukset.css" rel="stylesheet">
+ </head>
+ <body>
+   <!-- Kolmen vastuksen rinnankytkennän näyttävä scriptaus, joka näyttää 
+        kytkennän vastusten arvot sekä yhteisvastuksen arvon. -->
+   
+   
+   <p id="rinnan" class="boksi"></p>
+   
+   <script>
+   
+     var R1 = 10;
+     var R2 = 10;
+     var R3 = 10;
+     var Rkok = 0;
+   
+     Rkok = 1 / ((1 / R1) + (1 / R2) + (1 / R3));
+   
+     Rkok = Rkok.toFixed(2);
+   
+     document.getElementById("rinnan").innerHTML =
+       "R1 = " + R1 + " Ω<br>" + "R2 = " + R2 + " Ω<br>" + "R3 = " + R3 + " Ω<br>" + "Rkok = " + Rkok + " Ω";
+	 
+   </script>
+ </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="koodaukset.css" rel="stylesheet">
+  <script>
+    function rinnanTaulu() {
+      Rkok = 1 / ((1 / ohmit[0]) + (1 / ohmit[1]) + (1 / ohmit[2]));
+	  return Rkok.toFixed(2);
+    }
+  </script>  
+ </head>
+ <body>
+   <!-- Sähkölaitteiden tyypit ja hinnat eri muuttujien avulla näkyville. -->
+   
+   <p id="koe10" class="loota1"></p>
+
+   <script>
+     var koneMERKKI = "BOSCH PBH 2100 RE";
+     var koneHINTA = "105,00 €"; 
+     var kone2MERKKI = "Philips HU4813";
+     var kone2HINTA = "139,00 €";
+
+     document.getElementById("koe10").innerHTML =
+       "Tuotteet:" + "<br><br>" +   
+       "Poravasara " + window.koneMERKKI + "<br>" +
+       "Hinta: " + window.koneHINTA + "<br><br>" +
+       "Ilmankostutin " + kone2MERKKI + "<br>" +
+       "Hinta: " + kone2HINTA;
+   </script>
+ </body>
+</html>

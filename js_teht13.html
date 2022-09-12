@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="koodaukset.css" rel="stylesheet">
+  <script>
+    function arvonta(min,max) {
+      noppa = Math.floor(Math.random() * (max - min + 1)) + min;
+      if(noppa==1) {
+	    document.getElementById("arpa").src =
+	      "1.png";
+	  }
+	  if(noppa==2) {
+	    document.getElementById("arpa").src =
+	      "2.png";
+	  }
+	  if(noppa==3) {
+	    document.getElementById("arpa").src =
+	      "3.png";
+	  }
+	  if(noppa==4) {
+	    document.getElementById("arpa").src =
+	      "4.png";
+	  }
+	  if(noppa==5) {
+	    document.getElementById("arpa").src =
+	      "5.png";
+	  }
+	  if(noppa==6) {
+	    document.getElementById("arpa").src =
+	      "6.png";
+	  }
+    }
+  </script>  
+ </head>
+ <body>
+   <!-- Noppapeli --> 
+   
+   <div class="loota3">
+     <h2>Noppapeli</h2>
+   </div>
+   
+   <div class="loota3">
+     <img id="painike" class="button" onclick="arvonta(1,6)"></img>
+     <br><br>
+     <img id="arpa" src="" width="20%" height="auto"></img>
+   </div>
+   
+   <script>
+     document.getElementById("painike").src =
+       "wishmemell_b.png";
+   </script>
+ </body>
+</html>
